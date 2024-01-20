@@ -12,7 +12,8 @@
   "version": "1.0.0",
   "main": "postcss.config.js",
   "scripts": {
-    "start": "vite"
+    "start": "vite",
+    "build":"vite build"
   },
   "keywords": [],
   "author": "",

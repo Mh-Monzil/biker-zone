@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -30,11 +30,11 @@
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </div>
                 <ul tabindex="0" class="menu menu-sm dropdown-content text-base font-medium mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Home</a></li>
-                  <li><a>Feature</a></li>
-                  <li><a>Latest</a></li>
-                  <li><a>Review</a></li>
-                  <li><a>FAQ</a></li>
+                  <li><a href="#">Home</a></li>
+                <li><a href="#feature">Feature</a></li>
+                <li><a href="#latest">Latest</a></li>
+                <li><a href="#rating">Rating</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 </ul>
               </div>
               <a class="btn btn-ghost text-2xl lg:text-4xl font-bold">Biker Zone</a>
@@ -42,10 +42,10 @@
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1 text-base font-medium md:space-x-6">
                 <li><a href="#">Home</a></li>
-                  <li><a href="#feature">Feature</a></li>
-                  <li><a href="#latest">Latest</a></li>
-                  <li><a href="#rating">Rating</a></li>
-                  <li><a href="#faq">FAQ</a></li>
+                <li><a href="#feature">Feature</a></li>
+                <li><a href="#latest">Latest</a></li>
+                <li><a href="#rating">Rating</a></li>
+                <li><a href="#faq">FAQ</a></li>
               </ul>
             </div>
             <div class="md:ml-12">
@@ -185,11 +185,11 @@
       </section>
 
       <!-- client rating  -->
-      <section class="mt-32">
+      <section id="rating" class="mt-20 md:mt-32">
         <h2 class="text-5xl font-semibold text-center">Happy <span class="text-bike-primary">Clients says</span></h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:mt-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-8 md:mt-12 space-y-4">
           <!-- card-1  -->
-          <div class="card w-96 bg-base-100 shadow-xl mx-auto border border-gray-200">
+          <div class="card max-w-96 bg-base-100 shadow-xl mx-auto border border-gray-200">
             <figure class="px-10 pt-10">
               <img src="./images/others/user-1.png" alt="" class="w-36 rounded-xl" />
             </figure>
@@ -212,7 +212,7 @@
           </div>
 
           <!-- card-2  -->
-          <div class="card w-96 bg-base-100 shadow-xl mx-auto border border-gray-200">
+          <div class="card max-w-96 bg-base-100 shadow-xl mx-auto border border-gray-200">
             <figure class="px-10 pt-10">
               <img src="./images/others/user-2.png" alt="Shoes" class="w-36 rounded-xl" />
             </figure>
@@ -234,7 +234,7 @@
           </div>
 
           <!-- card-3  -->
-          <div class="card w-96 bg-base-100 shadow-xl mx-auto border border-gray-200">
+          <div class="card max-w-96 bg-base-100 shadow-xl mx-auto border border-gray-200">
             <figure class="px-10 pt-10">
               <img src="./images/others/user-3.png" alt="Shoes" class="w-36 rounded-xl" />
             </figure>
@@ -260,13 +260,13 @@
 
       <!-- faq  -->
 
-      <section class="mt-32">
+      <section id="faq" class="mt-32">
         <h2 class="text-5xl font-semibold text-center">Frequently Asked <span class="text-bike-primary">Questions</span></h2>
-        <div class="w-full lg:mt-12 flex flex-col justify-between items-center gap-24 lg:flex-row">
-          <div>
-            <img class="max-w-[495px]" src="./images/others/faq.png" alt="">
+        <div class="w-full mt-8 lg:mt-12 flex flex-col justify-between items-center gap-24 lg:flex-row">
+          <div >
+            <img  src="./images/others/faq.png" alt="">
           </div>
-          <div class="w-1/2">
+          <div class="lg:w-1/2">
             <div class="join join-vertical w-full">
               <div class="collapse collapse-arrow join-item border border-base-300">
                 <input type="radio" name="my-accordion-4" checked="checked" /> 
@@ -311,10 +311,21 @@
 
     <footer>
       <footer class="p-10 bg-neutral text-neutral-content ">
-        <div class="footer sm:container xl:max-w-[1440px] mx-auto">
+        <div class="footer sm:container lg:max-w-[1440px] mx-auto flex flex-col  justify-between items-center">
           <aside>
-            
-            <p>ACME Industries Ltd.<br/>Providing reliable tech since 1992</p>
+            <p class="md:space-x-6 mb-3">
+              <a>Download Now</a>
+              <a>License</a>
+            </p>
+            <p class="flex flex-wrap gap-6  mb-4">
+              <a>About</a>
+              <a>Features</a>
+              <a>Pricing</a>
+              <a>Career</a>
+              <a>Help</a>
+              <a>Privacy Policy</a>
+            </p>
+            <small>© 2020 bike. All rights reserved</small>
           </aside> 
           <nav>
             <header class="footer-title">Get the App</header> 
